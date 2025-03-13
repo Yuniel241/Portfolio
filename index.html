@@ -7,45 +7,43 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <style>
-        body { font-family: Arial, sans-serif; }
+        body { font-family: Arial, sans-serif; background-color: #e3f2fd; color: #0d47a1; }
         .container { margin-top: 50px; }
-        .project-card { box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); border-radius: 8px; padding: 20px; }
-        .carousel img { max-height: 250px; object-fit: cover; }
+        .project-card { background: white; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); border-radius: 8px; padding: 20px; margin-bottom: 20px; }
+        .carousel img { max-height: 400px; object-fit: contain; }
+        h1, h4 { color: #0d47a1; }
+        .badge { font-size: 14px; }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0d47a1;">
         <div class="container">
-            <a class="navbar-brand" href="#">Mon Portfolio</a>
+            <a class="navbar-brand text-white" href="#">Mon Portfolio</a>
         </div>
     </nav>
 
     <div class="container">
         <h1 class="text-center mb-4">Bienvenue sur mon Portfolio</h1>
-        <p class="text-center">Découvrez mes projets académiques</p>
+        <p class="text-center">Découvrez mes projets académiques et les compétences acquises.</p>
         
-        <div class="row">
-            <div class="col-md-4">
-                <div class="project-card bg-white p-3">
+        <div class="d-flex flex-column align-items-center">
+            <div class="col-md-8">
+                <div class="project-card">
                     <h4>Application de Gestion de Stock</h4>
-                    <p>Développement en Java (Eclipse) pour un magasin, incluant la création de factures et l’enregistrement de produits.</p>
+                    <p>Développement d'une application en **Java (Eclipse)** permettant la gestion des stocks d’un magasin. Ce projet inclut :</p>
+                    <ul>
+                        <li>Enregistrement et mise à jour des produits</li>
+                        <li>Génération de factures automatisée</li>
+                        <li>Gestion des fournisseurs et des clients</li>
+                    </ul>
+                    <p><strong>Compétences acquises :</strong> Programmation orientée objet (POO), gestion de bases de données avec MySQL, création d’interfaces utilisateur en Java Swing.</p>
                     <div id="carouselJava" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="images/java (1).png" class="d-block w-100" alt="Java Project 1">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/java (2).png" class="d-block w-100" alt="Java Project 2">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/java (3).png" class="d-block w-100" alt="Java Project 3">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/java (4).png" class="d-block w-100" alt="Java Project 4">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/java (5).png" class="d-block w-100" alt="Java Project 5">
-                            </div>
+                            <div class="carousel-item active"><img src="images/java (1).png" class="d-block w-100" alt="Java Project 1"></div>
+                            <div class="carousel-item"><img src="images/java (2).png" class="d-block w-100" alt="Java Project 2"></div>
+                            <div class="carousel-item"><img src="images/java (3).png" class="d-block w-100" alt="Java Project 3"></div>
+                            <div class="carousel-item"><img src="images/java (4).png" class="d-block w-100" alt="Java Project 4"></div>
+                            <div class="carousel-item"><img src="images/java (5).png" class="d-block w-100" alt="Java Project 5"></div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselJava" role="button" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -54,43 +52,39 @@
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         </a>
                     </div>
-                    <span class="badge bg-primary">Java</span>
-                    <span class="badge bg-secondary">Eclipse</span>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="project-card bg-white p-3">
+            <div class="col-md-8">
+                <div class="project-card">
                     <h4>Application Desktop de Gestion de Tickets de Transport</h4>
-                    <p>Développement en Visual-Basic (Visual Studio) pour la gestion de tickets de transport.</p>
+                    <p>Création d'une application en **Visual Basic (Visual Studio)** pour la gestion des tickets de transport.</p>
+                    <ul>
+                        <li>Interface intuitive pour l’achat de tickets</li>
+                        <li>Gestion des trajets et des horaires</li>
+                        <li>Impression de tickets</li>
+                    </ul>
+                    <p><strong>Compétences acquises :</strong> Développement d’interfaces graphiques, gestion de fichiers et intégration de bases de données Access.</p>
                     <img src="images/vsb.png" class="img-fluid" alt="Visual Basic Project">
-                    <span class="badge bg-primary">Visual Basic</span>
-                    <span class="badge bg-secondary">Visual Studio</span>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="project-card bg-white p-3">
+            <div class="col-md-8">
+                <div class="project-card">
                     <h4>Conception d’Interfaces Web</h4>
-                    <p>Création d’interfaces web dynamiques et responsives avec Bootstrap, HTML, CSS, JavaScript et Angular.</p>
+                    <p>Développement d’interfaces web responsives avec **Bootstrap, HTML, CSS, JavaScript et Angular**.</p>
+                    <ul>
+                        <li>Création de pages web interactives</li>
+                        <li>Utilisation de composants Angular pour une navigation fluide</li>
+                        <li>Adaptabilité sur différents appareils (PC, tablettes, mobiles)</li>
+                    </ul>
+                    <p><strong>Compétences acquises :</strong> Responsive design, JavaScript avancé, manipulation du DOM, utilisation d'APIs externes.</p>
                     <div id="carouselWeb" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="images/web (1).png" class="d-block w-100" alt="Web Project 1">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/web (2).png" class="d-block w-100" alt="Web Project 2">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/web (3).png" class="d-block w-100" alt="Web Project 3">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/web (4).png" class="d-block w-100" alt="Web Project 4">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/web (5).png" class="d-block w-100" alt="Web Project 5">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/web (6).png" class="d-block w-100" alt="Web Project 6">
-                            </div>
+                            <div class="carousel-item active"><img src="images/web (1).png" class="d-block w-100" alt="Web Project 1"></div>
+                            <div class="carousel-item"><img src="images/web (2).png" class="d-block w-100" alt="Web Project 2"></div>
+                            <div class="carousel-item"><img src="images/web (3).png" class="d-block w-100" alt="Web Project 3"></div>
+                            <div class="carousel-item"><img src="images/web (4).png" class="d-block w-100" alt="Web Project 4"></div>
+                            <div class="carousel-item"><img src="images/web (5).png" class="d-block w-100" alt="Web Project 5"></div>
+                            <div class="carousel-item"><img src="images/web (6).png" class="d-block w-100" alt="Web Project 6"></div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselWeb" role="button" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -99,10 +93,6 @@
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         </a>
                     </div>
-                    <span class="badge bg-primary">HTML/CSS</span>
-                    <span class="badge bg-secondary">Bootstrap</span>
-                    <span class="badge bg-success">JavaScript</span>
-                    <span class="badge bg-warning">Angular</span>
                 </div>
             </div>
         </div>
