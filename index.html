@@ -7,16 +7,20 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <style>
-        body { font-family: Arial, sans-serif; background-color: #e3f2fd; color: #0d47a1; }
+        body { font-family: Arial, sans-serif; background-color: #f0f8ff; color: #004080; }
         .container { margin-top: 50px; }
         .project-card { background: white; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); border-radius: 8px; padding: 20px; margin-bottom: 20px; }
         .carousel img { max-height: 400px; object-fit: contain; }
-        h1, h4 { color: #0d47a1; }
-        .badge { font-size: 14px; margin-right: 5px; background-color: #0d47a1; color: white; }
+        h1, h4 { color: #004080; }
+        .badge { font-size: 14px; margin-right: 5px; }
+        .badge-java { background-color: #f89820; }
+        .badge-vb { background-color: #0078d7; }
+        .badge-web { background-color: #ff4500; }
+        .badge-db { background-color: #009688; }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0d47a1;">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #004080;">
         <div class="container">
             <a class="navbar-brand text-white" href="#">Mon Portfolio</a>
         </div>
@@ -24,84 +28,73 @@
 
     <div class="container">
         <h1 class="text-center mb-4">Bienvenue sur mon Portfolio</h1>
-        <p class="text-center">Je suis MOELLET NZAOU Axel Yuniel, passionné par le développement et la conception d’applications.</p>
+        <p class="text-center">Je suis MOELLET NZAOU Axel Yuniel, développeur passionné par la création d’applications et la conception d’interfaces utilisateur. Mon parcours académique m’a permis d’acquérir de solides compétences en développement web, en programmation orientée objet et en gestion de bases de données. À travers mes projets, j’ai appris à allier rigueur et créativité.</p>
       
-        <h4 class="fw-bold">Domaines de compétences</h4>
-        <ul class="list-unstyled">
-            <li>Développement Web Frontend</li>
-            <li>Développement Web Backend</li>
-            <li>Programmation : Python, C, C++, Java, Visual-Basic</li>
-            <li>Développement Desktop</li>
-            <li>Gestion de Bases de Données</li>
-        </ul>
-        
-        <h3 class="fw-bold text-center">Mes Projets</h3>
-        
-        <div class="project-card">
-            <h4>Application de Gestion de Stock</h4>
-            <span class="badge">Java</span>
-            <span class="badge">Eclipse</span>
-            <span class="badge">MySQL</span>
-            <p>Développement d'une application permettant la gestion des stocks d’un magasin.</p>
-            <ul>
-                <li>Enregistrement et mise à jour des produits</li>
-                <li>Génération de factures automatisée</li>
-                <li>Gestion des fournisseurs et des clients</li>
-            </ul>
-            <div id="carouselJava" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active"><img src="images/java (1).png" class="d-block w-100" alt="Java Project 1"></div>
-                    <div class="carousel-item"><img src="images/java (2).png" class="d-block w-100" alt="Java Project 2"></div>
-                    <div class="carousel-item"><img src="images/java (3).png" class="d-block w-100" alt="Java Project 3"></div>
-                    <div class="carousel-item"><img src="images/java (4).png" class="d-block w-100" alt="Java Project 4"></div>
-                    <div class="carousel-item"><img src="images/java (5).png" class="d-block w-100" alt="Java Project 5"></div>
-                </div>
+        <div class="container">  
+            <h4 class="fw-bold">Domaines de Compétences</h4>
+            <div class="row text-center">
+                <div class="col-md-4 p-2"><span class="badge badge-java">Développement d'Applications Desktop</span></div>
+                <div class="col-md-4 p-2"><span class="badge badge-web">Développement Web Frontend & Backend</span></div>
+                <div class="col-md-4 p-2"><span class="badge badge-db">Gestion de Bases de Données</span></div>
+                <div class="col-md-4 p-2"><span class="badge badge-vb">Développement d’Interfaces Utilisateur</span></div>
+                <div class="col-md-4 p-2"><span class="badge badge-java">Programmation Orientée Objet (POO)</span></div>
             </div>
         </div>
 
-        <div class="project-card">
-            <h4>Application Desktop de Gestion de Tickets de Transport</h4>
-            <span class="badge">Visual Basic</span>
-            <span class="badge">Visual Studio</span>
-            <p>Création d'une application pour la gestion des tickets de transport.</p>
-            <ul>
-                <li>Interface intuitive pour l’achat de tickets</li>
-                <li>Gestion des trajets et des horaires</li>
-                <li>Impression de tickets</li>
-            </ul>
-            <img src="images/vsb.png" class="img-fluid" alt="Visual Basic Project">
-        </div>
-
-        <div class="project-card">
-            <h4>Conception d’Interfaces Web</h4>
-            <span class="badge">HTML</span>
-            <span class="badge">CSS</span>
-            <span class="badge">JavaScript</span>
-            <span class="badge">Bootstrap</span>
-            <span class="badge">Angular</span>
-            <p>Développement d’interfaces web responsives et dynamiques.</p>
-            <ul>
-                <li>Création de pages web interactives</li>
-                <li>Utilisation de composants Angular</li>
-                <li>Adaptabilité sur différents appareils</li>
-            </ul>
-            <div id="carouselWeb" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active"><img src="images/web (1).png" class="d-block w-100" alt="Web Project 1"></div>
-                    <div class="carousel-item"><img src="images/web (2).png" class="d-block w-100" alt="Web Project 2"></div>
-                    <div class="carousel-item"><img src="images/web (3).png" class="d-block w-100" alt="Web Project 3"></div>
-                    <div class="carousel-item"><img src="images/web (4).png" class="d-block w-100" alt="Web Project 4"></div>
-                    <div class="carousel-item"><img src="images/web (5).png" class="d-block w-100" alt="Web Project 5"></div>
-                    <div class="carousel-item"><img src="images/web (6).png" class="d-block w-100" alt="Web Project 6"></div>
+        <div class="d-flex flex-column align-items-center">
+          <h3 class="fw-bold">Mes Projets</h3>
+            <div class="col-md-8">
+                <div class="project-card">
+                    <h4>Application de Gestion de Stock</h4>
+                    <p>Développement en **Java (Eclipse)** permettant la gestion des stocks d’un magasin :</p>
+                    <ul>
+                        <li>Enregistrement et mise à jour des produits</li>
+                        <li>Génération de factures automatisée</li>
+                        <li>Gestion des fournisseurs et des clients</li>
+                    </ul>
+                    <p><strong>Compétences acquises :</strong> POO, gestion de bases de données MySQL, interfaces en Java Swing.</p>
+                    <span class="badge badge-java">Java</span>
+                    <span class="badge badge-db">MySQL</span>
+                    <div id="carouselJava" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img src="images/java (1).png" class="d-block w-100"></div>
+                            <div class="carousel-item"><img src="images/java (2).png" class="d-block w-100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="project-card">
+                    <h4>Application Desktop de Gestion de Tickets de Transport</h4>
+                    <p>Application en **Visual Basic (Visual Studio)** pour la gestion des tickets de transport.</p>
+                    <span class="badge badge-vb">Visual Basic</span>
+                    <span class="badge badge-db">MS Access</span>
+                    <img src="images/vsb.png" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="project-card">
+                    <h4>Conception d’Interfaces Web</h4>
+                    <p>Développement d’interfaces responsives avec **Bootstrap, HTML, CSS, JavaScript, Angular**.</p>
+                    <span class="badge badge-web">HTML</span>
+                    <span class="badge badge-web">CSS</span>
+                    <span class="badge badge-web">JavaScript</span>
+                    <span class="badge badge-web">Angular</span>
+                    <div id="carouselWeb" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img src="images/web (1).png" class="d-block w-100"></div>
+                            <div class="carousel-item"><img src="images/web (2).png" class="d-block w-100"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
+        
         <div class="text-center mt-5">
             <h4>Contact</h4>
-            <p><strong>Email :</strong> <a href="mailto:axelmoellet594@gmail.com" target="_blank">axelmoellet594@gmail.com</a></p>
+            <p><strong>Email :</strong> <a href="mailto:axelmoellet594@gmail.com">axelmoellet594@gmail.com</a></p>
             <p><strong>Téléphone :</strong> +241 76 59 36 25 | +241 66 21 56 40</p>
-            <p><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/axel-yuniel/" target="_blank">MOELLET NZAOU Axel Yuniel</a></p>
+            <p><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/axel-yuniel/">MOELLET NZAOU Axel Yuniel</a></p>
             <p><strong>Localisation :</strong> Libreville, PK 12</p>
         </div>
     </div>
